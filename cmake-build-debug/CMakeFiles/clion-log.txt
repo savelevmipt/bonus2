@@ -1,0 +1,33 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja /Users/savelevaleksandr/CLionProjects/bonus2
+-- The C compiler identification is AppleClang 12.0.0.12000032
+-- The CXX compiler identification is AppleClang 12.0.0.12000032
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9 (found version "3.9.0") found components: Interpreter 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/savelevaleksandr/CLionProjects/bonus2/cmake-build-debug
+
+Cannot get compiler information:
+	Compiler exited with error code 1: /Library/Developer/CommandLineTools/usr/bin/c++ -xc++ -isystem/Users/savelevaleksandr/CLionProjects/bonus2/googletest/googletest/include -isystem/Users/savelevaleksandr/CLionProjects/bonus2/googletest/googletest -Ofast -Wall -Wextra -Wpedantic -fomit-frame-pointer -fsanitize=address,leak,undefined -g -std=c++17 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -std=gnu++11 -fpch-preprocess -v -dD -E
+	Apple clang version 12.0.0 (clang-1200.0.32.28)
+	Target: x86_64-apple-darwin19.6.0
+	Thread model: posix
+	InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+	ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/c++/v1"
+	clang: error: unsupported option '-fsanitize=leak' for target 'x86_64-apple-darwin19.6.0'
+	
+	
