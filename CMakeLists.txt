@@ -3,8 +3,12 @@ project(AMC_CRYPTO_BONUS)
 
 add_subdirectory(googletest)
 set(CMAKE_CXX_FLAGS "-Ofast -Wall -Wextra \
-        -Wpedantic -fomit-frame-pointer -fsanitize=address,leak,undefined \
+        -Wpedantic -fomit-frame-pointer  \
          -g -std=c++17")
+
+#set(CMAKE_CXX_FLAGS "-Ofast -Wall -Wextra \
+#        -Wpedantic -fomit-frame-pointer -fsanitize=address,leak,undefined \
+#         -g -std=c++17")
 
 enable_testing()
 add_executable(tests tests.cpp)
