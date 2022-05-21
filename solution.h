@@ -21,6 +21,7 @@ std::tuple<vector_t, vector_t, vector_t> FakeSign(const std::string& string, RWE
         i = 1;
     }
     z2 = c * ase + c - hash - a * z1;
+    z2 = z2 % module;
 
     return std::make_tuple(c, z1, z2);
 }
